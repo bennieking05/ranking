@@ -11,7 +11,7 @@ datagroup: rankingquestions_default_datagroup {
 persist_with: rankingquestions_default_datagroup
 
 explore:survey_contribution_ranking_answer  {
-  label: "What Employees Value Most"
+  label: "Employees Value Most"
   join: survey_form_answer {
     type:  left_outer
     sql_on: ${survey_contribution_ranking_answer.form_answer_id} = ${survey_form_answer.id} ;;
