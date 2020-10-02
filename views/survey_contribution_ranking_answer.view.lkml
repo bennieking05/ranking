@@ -27,4 +27,8 @@ view: survey_contribution_ranking_answer {
     type: count
     drill_fields: [id]
   }
+  measure: position_avg {
+    type: average
+    sql: ${TABLE}.position ;;
+  }
 }
